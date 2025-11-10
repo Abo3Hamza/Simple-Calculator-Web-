@@ -21,7 +21,7 @@ jobs:
     - name: Publish .NET Project
       run: dotnet publish "Simple Calculator (Web).csproj" -c Release -o release --nologo
 
-     - name: Add .nojekyll file
+    - name: Add .nojekyll file
       run: touch release/wwwroot/.nojekyll
 
     - name: copy index.html to 404.html
