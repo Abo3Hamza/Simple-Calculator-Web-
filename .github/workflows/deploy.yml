@@ -15,18 +15,13 @@ jobs:
       with:
         dotnet-version: 8.0.x
 
-    # ===> أضف السطرين التاليين هنا <===
     - name: Install wasm-tools
       run: dotnet workload install wasm-tools-net8
 
     - name: Publish .NET Project
       run: dotnet publish "Simple Calculator (Web).csproj" -c Release -o release --nologo
 
-    # ... (باقي الملف كما هو) ...
-    - name: Change base-tag in index.html
-      run: sed -i 's/<base href="\/" \/>/<base href="\/Simple-Calculator-Web-\/" \/>/g' release/wwwroot/index.html
-
-    - name: Add .nojekyll file
+     - name: Add .nojekyll file
       run: touch release/wwwroot/.nojekyll
 
     - name: copy index.html to 404.html
