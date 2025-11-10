@@ -8,6 +8,12 @@ jobs:
   deploy-to-github-pages:
     runs-on: ubuntu-latest
     steps:
+    # ===> الخطوة الجديدة: تنظيف الذاكرة المؤقتة <===
+    - name: Clear Cache
+      uses: actions/cache/delete@v3
+      with:
+        key: dotnet-cache
+
     - uses: actions/checkout@v3
 
     - name: Setup .NET
