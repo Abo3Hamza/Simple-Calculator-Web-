@@ -1,0 +1,51 @@
+﻿@page "/BuoCalc"
+@using CodeHere;
+<PageTitle>Buttom-Only Calculator</PageTitle>
+
+<div class="PageBuoCalc">
+	<h1>Button-Only Calculator</h1>
+
+
+	<div class="DesignCalc">
+
+		<input class="InputScreen" readonly value="@calculator.expression" />
+
+		<table class="cell">
+			<tr>
+				<td class="remove"><button @onclick="calculator.Clear">C</button></td>
+				<td class="operator"><button @onclick="() => calculator.Append('(')">(</button></td>
+				<td class="operator"><button @onclick="() => calculator.Append(')')">)</button></td>
+				<td class="operator"><button @onclick="() => calculator.Append('/')">/</button></td>
+			</tr>
+			<tr>
+				<td class="number"><button @onclick="() => calculator.Append('7')">7</button></td>
+				<td class="number"><button @onclick="() => calculator.Append('8')">8</button></td>
+				<td class="number"><button @onclick="() => calculator.Append('9')">9</button></td>
+				<td class="operator"><button @onclick="() => calculator.Append('*')">*</button></td>
+			</tr>
+			<tr>
+				<td class="number"><button @onclick="() => calculator.Append('4')">4</button></td>
+				<td class="number"><button @onclick="() => calculator.Append('5')">5</button></td>
+				<td class="number"><button @onclick="() => calculator.Append('6')">6</button></td>
+				<td class="operator"><button @onclick="() => calculator.Append('-')">-</button></td>
+			</tr>
+			<tr>
+				<td class="number"><button @onclick="() => calculator.Append('1')">1</button></td>
+				<td class="number"><button @onclick="() => calculator.Append('2')">2</button></td>
+				<td class="number"><button @onclick="() => calculator.Append('3')">3</button></td>
+				<td class="operator"><button @onclick="() => calculator.Append('+')">+</button></td>
+			</tr>
+			<tr>
+				<td class="number"><button @onclick="() => calculator.Append('0')">0</button></td>
+				<td class="number"><button @onclick="() => calculator.Append('.')">.</button></td>
+				<td class="remove"><button @onclick="calculator.Undo">&#8592;</button></td>
+				<td class="equal"><button @onclick="calculator.EvaluateExpression">=</button></td>
+			</tr>
+
+		</table>
+	</div>
+</div>
+@code
+{
+	LogicHere calculator = new LogicHere();
+}

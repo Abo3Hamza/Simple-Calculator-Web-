@@ -1,0 +1,87 @@
+.PageTxtCalc {
+    margin-top: 160px;
+    margin-left: 400px;
+    width: 430px;
+    padding: 10px;
+    background-color: #9cd0f7;
+}
+
+.PageBuoCalc {
+    margin-top: 55px;
+    margin-left: 400px;
+    width: 450px;
+    padding: 10px;
+    background-color: #f7d09c;
+}
+
+.number button {
+    font-weight: bold;
+    color: blue;
+    background-color: #e0f0ff;
+}
+
+.operator button {
+    font-weight: bold;
+    color: red;
+    background-color: #ffe0e0;
+}
+
+.remove button {
+    color: gray;
+    cursor: pointer;
+    background-color: #f0f0f0;
+}
+
+.equal button {
+    font-weight: bold;
+    color: green;
+    background-color: #e0ffe0;
+}
+
+.cell tr td button {
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.InputScreen {
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    text-align: right;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid black;
+    background-color: #9cecee;
+}
+
+.DesignCalc {
+    width: 220px;
+    font-family: Arial, sans-serif;
+    margin: 95px;
+    background-color: #aec3d3;
+}
+
+.ButtomCalc {
+    display: inline-block;
+}
+
+.ButtomCalc button {
+    height: 40px;
+    margin: 5px;
+    padding: 5px;
+    background-color: #d3e0ea;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 16px;
+}
+
+.txtLabel {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: #333333;
+}

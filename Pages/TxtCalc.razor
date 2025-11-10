@@ -1,0 +1,17 @@
+﻿@page "/TxtCalc"
+@using CodeHere;
+
+<PageTitle>TextBox Calculator</PageTitle>
+<div class="PageTxtCalc">
+	<h1>TextBox Calculator </h1>
+
+	<label for="exp" class="txtLabel"> Enter the mathematical expression to evaluate: </label>
+	<br />
+	<input class="InputScreen" id="exp" @bind="calculator.expression" />
+	<div class="ButtomCalc">
+		<button @onclick="calculator.EvaluateExpression">Calculate</button>
+	</div>
+</div>
+@code {
+	LogicHere calculator = new LogicHere();
+}
