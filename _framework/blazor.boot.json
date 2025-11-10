@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Simple Calculator (Web)",
   "resources": {
-    "hash": "sha256-wQOsxABbfOWY7f/gwU/9yteKoo7OTk0LCKMDhgktNLs=",
+    "hash": "sha256-7yXa66lVTDdIT62ELRFK8+D/vFJJHeZ9eXfYBYY3HFY=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-l/Jtt0U+MCH8pZldoMg9uoFfzK20zfPCO3dwU7GX9oc="
     },
@@ -55,7 +55,7 @@
       "System.Text.RegularExpressions.wasm": "sha256-tCTxwg2N3nkoTMDAtfc+X4iVUDF7K9iBuzpAhgC284E=",
       "System.wasm": "sha256-PUc71Jd5nvz5F65sAd0C3ZORcUzYK2JSfSDmE+Drn0Q=",
       "System.Private.CoreLib.wasm": "sha256-CXxWjIvMx5+DnPbSoYf0C7UKwD2sLuIg1yCAtnlGPmM=",
-      "Simple Calculator (Web).wasm": "sha256-PTp6NpchSVzzsgmTI80dagpo+6SQKUApmRfuq1zVTjg="
+      "Simple Calculator (Web).wasm": "sha256-xlBXkWvI5lQL7ByUzhbKwUstyLhmbTHOUK+naaW8VG8="
     }
   },
   "cacheBootResources": true,
